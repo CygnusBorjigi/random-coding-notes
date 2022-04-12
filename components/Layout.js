@@ -8,6 +8,9 @@ const Layout = ({ title, keyword, description, children }) => {
                 <title>{ title }</title>
                 <meta name="description" content={ description } />
                 <meta name="keyword" content={ keyword } /> 
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Cinzel&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet" />
             </Head>
             <Header />
             { children }

@@ -5,6 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'biz': ['BIZ UDPMincho', 'serif'],
+      'cizel': ['Cinzel', 'serif'],
+      'zilla': ['Zilla Slab', 'serif']
+    }
   },
   plugins: [],
 }
