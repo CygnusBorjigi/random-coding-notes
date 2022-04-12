@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <Layout>
         <h1>This is working</h1>

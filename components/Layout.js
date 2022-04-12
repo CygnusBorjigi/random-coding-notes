@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '../components/Header';
 
 const Layout = ({ title, keyword, description, children }) => {
     return(
@@ -8,6 +9,7 @@ const Layout = ({ title, keyword, description, children }) => {
                 <meta name="description" content={ description } />
                 <meta name="keyword" content={ keyword } /> 
             </Head>
+            <Header />
             { children }
         </div>        
     )
