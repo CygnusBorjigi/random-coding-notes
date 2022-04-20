@@ -1,11 +1,23 @@
 import Layout from '../components/Layout';
+import path from 'path';
+import fs from 'fs';
 
-const Home = () => {
+export default function Home({ files }) {
   return (
     <Layout>
-        <h1>This is working</h1>
+      <h1 className="">This is working</h1>
+      {console.log(files)}
     </Layout>
   )
 }
 
-export default Home
+export async function getStaticProps() {
+  // Get files from the posts dir
+  const files = fs.readdirSync(path.join('notes'))
+
+  return {
+    props: {
+      files,
+    },
+  }
+}

@@ -13,7 +13,9 @@ const Layout = ({ title, keyword, description, children }) => {
                 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Cinzel&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet" />
             </Head>
             <Header />
-            { children }
+            <div className='mt-10'>
+                { children }
+            </div>
         </div>        
     )
 }
